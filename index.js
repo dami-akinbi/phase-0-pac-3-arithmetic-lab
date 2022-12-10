@@ -28,6 +28,6 @@ function makeInt(n) {
 }
 
 function preserveDecimal(n) {
-  if (typeof parseInt(n, 10) === "number") return Number(n);
+  if (typeof parseFloat(n) === "number") return parseFloat(n);
   else return NaN;
 }
